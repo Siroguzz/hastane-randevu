@@ -24,7 +24,7 @@ const RandevuItem = (props) => {
       <td>{randevu.il}</td>
       <td>
         <Button onClick={onCancelClick} variant="danger">
-          Iptal
+          İptal
         </Button>
       </td>
     </tr>

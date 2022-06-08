@@ -23,7 +23,7 @@ const Doktorlar = (props) => {
           setRandevularimiGoruntule(true);
         }}
       >
-        Randevularimi Goruntule
+        Randevuları Görüntüle (Admin Girişi)
       </Button>
 
       <Form.Group className="mb-3">
@@ -64,5 +64,4 @@ const Doktorlar = (props) => {
     </Container>
   );
 };
-
 export default Doktorlar;

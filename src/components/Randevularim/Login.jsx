@@ -7,36 +7,36 @@ const Login = (props) => {
 
   // eger tc no ve sifre dogruysa propsdan login success degerini true yapar
   const doLogin = () => {
-    if (tcKimlik == "12345678910" && pass == "1234") {
+    if (tcKimlik == "admin" && pass == "admin1234") {
       props.setLoginSuccess(true);
     } else if (tcKimlik == "" && pass == "") {
-      alert("Bos alan birakilamaz!");
+      alert("Bu alanlar boş bırakalamaz!");
     } else {
-      alert("Tc no veya sifre hatali!");
+      alert("TC numaranız veya Şifreniz hatalı!");
     }
   };
 
   return (
     <div>
       <Form.Group className="mb-3">
-        <h2>Giris</h2>
-        <Form.Label>TC Numarasi</Form.Label>
+        <h2>Giriş</h2>
+        <Form.Label>TC Numaranız</Form.Label>
         <Form.Control
-          placeholder="tc kimlik"
+          placeholder="TC Kimlik Numaranız"
           value={tcKimlik}
           onChange={(e) => setTcKimlik(e.target.value)}
         />
         <br />
-        <Form.Label>Sifre</Form.Label>
+        <Form.Label>Şifre</Form.Label>
         <Form.Control
           type="password"
-          placeholder="sifre"
+          placeholder="Şifre"
           value={pass}
           onChange={(e) => setPass(e.target.value)}
         />
       </Form.Group>
       <Button onClick={doLogin} variant="success">
-        Giris Yap
+        Giriş Yap
       </Button>
     </div>
   );

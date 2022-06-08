@@ -21,7 +21,7 @@ const RandevuSecim = (props) => {
     ) {
       setSelectedRandevu();
     } else if (saat?.alindi == 1) {
-      alert("Bu randevu alinamaz!");
+      alert("Bu randevu saati alınmıştır. Lütfen başka bir gün veya saat seçiniz");
     } else {
       const tmp = {
         doktorID: id,

@@ -47,18 +47,18 @@ const DoktorItem = (props) => {
     console.log(selectedDoktor);
 
     alert(
-      "Randevunuz onaylanmistir.\n" +
-        selectedDoktor.doktor.ad +
-        " " +
-        selectedDoktor.doktor.soyad +
-        "  -  " +
-        selectedDoktor.doktor.alani +
-        "\n" +
-        selectedDoktor.il +
-        "\n" +
-        selectedGun.tarih.toISOString().split("T")[0] +
-        " - " +
-        saat.saat
+      "Randevunuz Onaylanmıştır.\n" +
+      selectedDoktor.doktor.ad +
+      " " +
+      selectedDoktor.doktor.soyad +
+      "  -  " +
+      selectedDoktor.doktor.alani +
+      "\n" +
+      selectedDoktor.il +
+      "\n" +
+      selectedGun.tarih.toISOString().split("T")[0] +
+      " - " +
+      saat.saat
     );
   };
 
@@ -77,7 +77,7 @@ const DoktorItem = (props) => {
           variant="primary"
           onClick={() => setShowRandevular(!showRandevular)}
         >
-          {showRandevular == false ? "Randevulara bak" : "Kapat"}
+          {showRandevular == false ? "Randevulara Göster" : "Kapat"}
         </Button>
         <hr />
         <RandevuSecim
