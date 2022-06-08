@@ -1,0 +1,10 @@
+.randevu-secim-item {
+  background-color: #013179;
+  width: 80px;
+  text-align: center;
+  padding: 2px;
+  margin: 5px;
+  color: white;
+  font-weight: 400;
+  border-radius: 20px;
+}
