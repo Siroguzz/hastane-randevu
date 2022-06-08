@@ -27,7 +27,7 @@ const Doktorlar = (props) => {
       </Button>
 
       <Form.Group className="mb-3">
-        <Form.Label>Sehir</Form.Label>
+        <Form.Label>Şehir</Form.Label>
         <Form.Select value={il} onChange={(e) => setIl(e.target.value)}>
           {iller.map((x, index) => (
             <option value={x} key={index}>

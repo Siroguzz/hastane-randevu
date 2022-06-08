@@ -53,11 +53,11 @@ const Randevularim = (props) => {
             <thead>
               <tr>
                 <th>Doktor</th>
-                <th>Bolum</th>
+                <th>Bölüm</th>
                 <th>Tarih</th>
                 <th>Saat</th>
-                <th>Sehir</th>
-                <th>Secenek</th>
+                <th>Şehir</th>
+                <th>Seçenek</th>
               </tr>
             </thead>
             <tbody>
